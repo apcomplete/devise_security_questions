@@ -1,0 +1,2 @@
+module DeviseSecurityQuestions
+end
