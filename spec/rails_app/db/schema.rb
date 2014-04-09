@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140409182437) do
+ActiveRecord::Schema.define(version: 20140409184611) do
+
+  create_table "devise_security_answers", force: true do |t|
+    t.string   "encrypted_body"
+    t.integer  "questionable_id"
+    t.string   "questionable_type"
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "devise_security_questions", force: true do |t|
     t.string   "title"

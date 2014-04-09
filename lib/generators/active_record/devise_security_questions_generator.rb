@@ -10,6 +10,7 @@ module ActiveRecord
 
       def copy_devise_security_questions_migration
         migration_template "questions.rb", "db/migrate/devise_security_questions_create_questions.rb"
+        migration_template "answers.rb", "db/migrate/devise_security_questions_create_answers.rb"
       end
 
     end

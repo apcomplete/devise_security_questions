@@ -2,6 +2,6 @@
 
 FactoryGirl.define do
   factory :question, class: DeviseSecurityQuestions::Question do
-    title { Faker::Lorem.sentence + '?' }
+    sequence(:title) { |n| "Security question #{n}?" }
   end
 end

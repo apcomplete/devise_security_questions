@@ -6,3 +6,4 @@ module DeviseSecurityQuestions
 end
 
 require "devise_security_questions/models/question"
+require "devise_security_questions/models/answer"
