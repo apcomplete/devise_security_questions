@@ -20,6 +20,9 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "bundler", "~> 1.3"
   s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "shoulda-matchers", "~> 2.5"
+  s.add_development_dependency "factory_girl_rails", "~> 4.4"
+  s.add_development_dependency "faker", "~> 1.3"
   s.add_development_dependency "rake"
   s.add_development_dependency "sqlite3"
 end
