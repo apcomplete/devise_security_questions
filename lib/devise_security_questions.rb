@@ -7,3 +7,4 @@ end
 
 require "devise_security_questions/models/question"
 require "devise_security_questions/models/answer"
+require "devise_security_questions/models/security_question_authenticatable"

@@ -5,5 +5,9 @@ FactoryGirl.define do
     sequence(:email) { |n| "user.#{n}@example.com" }
     password "password"
     password_confirmation { password }
+
+    after(:create) do |user, evaluator|
+      FactoryGirl.create_list :answer, 5, questionable: user
+    end
   end
 end
