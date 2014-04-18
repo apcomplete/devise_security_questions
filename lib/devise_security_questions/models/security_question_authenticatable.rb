@@ -1,3 +1,5 @@
+require 'devise_security_questions/hooks/after_authentication'
+
 module Devise
   module Models
     module SecurityQuestionAuthenticatable
